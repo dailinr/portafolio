@@ -37,13 +37,12 @@ export const Proyectos = () => {
   return (
     <div className='proyectos'>
 
-        <h3 >Proyectos<hr /></h3>
-        
-        
+        <h3>Proyectos<hr /></h3>
+
         <div className='cont-proy'>
+
             {dataProyect.map((dataProyect) => (
               <ListProyects key={dataProyect.id} data={dataProyect} />
-            
             ))}
         </div>
         

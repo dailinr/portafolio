@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import '../css/aside.css'
+import { NavLink } from "react-router-dom";
 
 export const Aside = () => {
     // Estado para manejar si estamos en un ancho de ventana de 800px o menos
@@ -40,36 +41,36 @@ export const Aside = () => {
 
         <ul className={`nav nav-pills ${isNarrowScreen ? 'flex-row' : 'flex-column'} mb-auto`}>
         {/* <ul className="nav nav-pills flex-column mb-auto"> */}
+
             <li className="nav-item">
-                <a href="/" className="nav-link text-white" >
-                    <i class="bi bi-house" /> &nbsp;
-                    {!isNarrowScreen ? items.inicio : null}
-                </a>
+
+                <NavLink to="/inicio" className="nav-link text-white">
+                    <i className="bi bi-house" /> &nbsp;
+                    {!isNarrowScreen && items.inicio }
+                </NavLink>
             </li>
             
             <li className="nav-item">
-                <a href="/" className="nav-link text-white">
-                    <i class="bi bi-person-vcard"></i> &nbsp;
-                    {!isNarrowScreen ? items.sobreMi : null}
-                </a>
+
+                <NavLink to="/sobremi" className="nav-link text-white">
+                    <i className="bi bi-person-vcard"></i> &nbsp;
+                    {!isNarrowScreen && items.sobreMi }
+                </NavLink>
             </li>
+            
             <li className="nav-item">
-                <a href="/" className="nav-link text-white">
-                    <i class="bi bi-code-slash"></i> &nbsp;
-                    {!isNarrowScreen ? items.proyectos : null}
-                </a>
+
+                <NavLink to="/proyectos" className="nav-link text-white">
+                    <i className="bi bi-code-slash"></i> &nbsp;
+                    {!isNarrowScreen && items.proyectos }
+                </NavLink>
             </li>
-            {/* <li className="nav-item">
-                <a href="/" className="nav-link text-white">
-                    <i class="bi bi-lightning-charge-fill"></i> &nbsp;
-                    {!isNarrowScreen ? items.skills : null}
-                </a> 
-            </li> */}
+            
             <li className="nav-item">
-                <a href="/" className="nav-link text-white">
-                    <i class="bi bi-envelope-at"></i> &nbsp;
-                    {!isNarrowScreen ? items.contactame : null}
-                </a>
+                <NavLink to="/contacto" className="nav-link text-white">
+                    <i className="bi bi-envelope-at"></i> &nbsp;
+                    {!isNarrowScreen && items.contactame }
+                </NavLink>
             </li>
         </ul>
         

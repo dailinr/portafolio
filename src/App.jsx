@@ -1,15 +1,14 @@
 import { useState } from 'react'
 import './App.css'
-import Aside from './components/Aside'
-// import { Main } from './components/Main'
 import { MisRutas } from './router/MisRutas'
+import './index.css'
 
 function App() {
 
   return (
-    <>
+    <div className="app">
       <MisRutas />
-    </>
+    </div>
   )
 }
 

@@ -78,11 +78,11 @@ export const Inicio = ( ) => {
                         </p>
                     </div>
                     <div className='links'>
-                        <a class="btn" href="https://github.com/dailinr/blog-web" target="_blank" >
-                            <i class="bi bi-github text-center "></i>
+                        <a className="btn" href="https://github.com/dailinr/blog-web" target="_blank" >
+                            <i className="bi bi-github text-center "></i>
                         </a>
-                        <a class="btn" title="ir a la página" href="https://blogweblive.000webhostapp.com/" target="_blank" >
-                            <i class='bx bx-link-external'></i>
+                        <a className="btn" title="ir a la página" href="https://blogweblive.000webhostapp.com/" target="_blank" >
+                            <i className='bx bx-link-external'></i>
                         </a>
                     </div>
                     
@@ -111,11 +111,11 @@ export const Inicio = ( ) => {
                         </p>
                     </div>
                     <div className='links'>
-                        <a class="btn" href="https://github.com/dailinr/blog-web" target="_blank" >
-                            <i class="bi bi-github text-center "></i>
+                        <a className="btn" href="https://github.com/dailinr/blog-web" target="_blank" >
+                            <i className="bi bi-github text-center "></i>
                         </a>
-                        <a class="btn" title="ir a la página" href="https://blogweblive.000webhostapp.com/" target="_blank" >
-                            <i class='bx bx-link-external'></i>
+                        <a className="btn" title="ir a la página" href="https://blogweblive.000webhostapp.com/" target="_blank" >
+                            <i className='bx bx-link-external'></i>
                         </a>
                     </div>
                     

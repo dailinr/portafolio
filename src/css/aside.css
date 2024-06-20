@@ -13,13 +13,13 @@
    font-weight: 400;
 }
 
-.aside .nav-item.active a {
-    background-color: #000000;
+.nav-link:active .nav-item{
+    background-color: #000000 ;
 }
 
-.aside .nav-item:hover a,
-.aside .nav-item:focus a {
-    background-color: #000000;
+.nav-item:hover .nav-link,
+.nav-item:focus .nav-link {
+    background-color: #000000 ;
 }
 
 .aside i .bi{

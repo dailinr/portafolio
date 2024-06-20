@@ -30,7 +30,6 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
     background-color: transparent;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     color: white;
     
 }
@@ -136,7 +135,8 @@
 }
 
 .cv-button:hover {
-    background-color: #e5bb0e;
+    
+    background-image: linear-gradient(80deg, #FAD02E, #5a4a0e);
     color: black;
 }
 .sobreMi h4{
@@ -237,7 +237,15 @@
 }
 
 /* ------------------------------------------------------------------- */
+@media (max-width: 1000px) {
+    
 
+    .skills{
+        grid-row: 3/6;
+        grid-column: 1/-1;
+    }
+
+}
 @media (max-width: 600px) {
    .idk{
     display: none;

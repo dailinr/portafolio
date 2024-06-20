@@ -35,8 +35,8 @@ export const Main = () => {
 
   return (
     <div className='main'>
-      {/* <Proyectos dataProyect={dataProyect} /> */}
-      <Inicio data={dataProyect} />
+       <Proyectos dataProyect={dataProyect} /> 
+      {/* <Inicio data={dataProyect} /> */}
     </div>
   )
 }

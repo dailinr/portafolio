@@ -30,13 +30,16 @@ export const Aside = () => {
 
   return (
     
-    <div className="aside d-flex flex-column flex-shrink-0 p-3 " style={{width: '200px'}}>
+    // <div className="aside d-flex flex-column flex-shrink-0 p-3 " style={{width: '200px'}}>
+    <div className={`aside d-flex ${isNarrowScreen ? 'flex-row' : 'flex-column'} flex-shrink-0 p-3`} style={{ width: isNarrowScreen ? '100%' : '200px' }} >
 
-        <div className="icon-terminal">
-            <i className="bi bi-terminal" style={{ color: '#FAD02E', fontSize: '30px '}} ></i>
+        <div className="icon-terminal ">
+            <i className="bi bi-terminal" style={{ color: '#FAD02E', fontSize: '30px '}} ></i> 
+            {/* <img src="../public/2-removebg-preview.png" alt="" width="80px" height="80px" /> */}
         </div>
-        
-        <ul className="nav nav-pills flex-column mb-auto">
+
+        <ul className={`nav nav-pills ${isNarrowScreen ? 'flex-row' : 'flex-column'} mb-auto`}>
+        {/* <ul className="nav nav-pills flex-column mb-auto"> */}
             <li className="nav-item">
                 <a href="/" className="nav-link text-white" >
                     <i class="bi bi-house" /> &nbsp;

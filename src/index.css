@@ -8,13 +8,13 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-
+/* 
 .app {
   display: grid;
   grid-template-columns: 200px auto;
   height: 100vh;
   background-color: #161717;
-}
+} */
 
 .aside {
   grid-column: 1/2;
@@ -39,20 +39,16 @@ body {
 }
 
 @media (max-width: 800px) {
-  .app {
+  /* .app {
     grid-template-columns: auto;
     grid-template-rows: 40px 1fr;
-  }
+  } */
   .main{
     grid-row: 2/3;
     margin: 10px;
     width: calc(100% - 20px);
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
+  }
   .aside {
     grid-column: 1/-1;
     width: 100%;

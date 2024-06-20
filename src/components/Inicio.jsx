@@ -1,8 +1,7 @@
 import React from 'react'
 import '../css/inicio.css'
-import { ListProyects } from './ListProyects'
 
-export const Inicio = ( {data}) => {
+export const Inicio = ( ) => {
     const imagenes = {
         monitorias: '../public/monitorias.jpg',
         blog: '../public/blog-web.jpg',

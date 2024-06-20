@@ -59,12 +59,12 @@ export const Aside = () => {
                     {!isNarrowScreen ? items.proyectos : null}
                 </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
                 <a href="/" className="nav-link text-white">
                     <i class="bi bi-lightning-charge-fill"></i> &nbsp;
                     {!isNarrowScreen ? items.skills : null}
-                </a>
-            </li>
+                </a> 
+            </li> */}
             <li className="nav-item">
                 <a href="/" className="nav-link text-white">
                     <i class="bi bi-envelope-at"></i> &nbsp;

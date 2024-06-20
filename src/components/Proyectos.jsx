@@ -14,7 +14,7 @@ export const Proyectos = ({ dataProyect }) => {
         
         <div className='cont-proy'>
             {dataProyect.map((dataProyect) => (
-                <ListProyects key={dataProyect.id} data={dataProyect} />
+              <ListProyects key={dataProyect.id} data={dataProyect} />
             
             ))}
         </div>

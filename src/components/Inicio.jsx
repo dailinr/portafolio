@@ -126,7 +126,7 @@ export const Inicio = ( {data}) => {
             </div>
 
             
-        </div>
+        </div> 
 
         <div className='skills skills-inicio' >
             <div>

@@ -13,17 +13,17 @@ body {
   display: grid;
   grid-template-columns: 200px auto;
   height: 100vh;
-  background-color: #161717;
+  background-color: #262727;
 } 
 
 .aside {
   grid-column: 1/2;
-  background-color: #161717;
+  background-color:#262727;
 }
 
 .contenido {
   grid-column: 2/3;
-  background-color: #302f2f;
+  background-color: #141414;
   width: calc(100% - 20px);
   margin: 10px;
   border-radius: 20px;
@@ -57,7 +57,7 @@ body {
     width: 100%;
     grid-row: 1/2;
     height: 40px;
-    background-color: #161717;
+    background-color: #262727;
     display: flex;
     justify-content: space-around;
     align-items: center; 

@@ -16,7 +16,7 @@
     margin-right: 40px;
     margin-bottom: 30px;
     width: 270px;
-    background-color: #161717 !important;
+    background-color: #262727 !important;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border-radius: 16px;
     overflow: hidden;
@@ -86,4 +86,18 @@
 .lenguajes .bx{
     font-size: 1.5em;
     margin-right: 5px;
+}
+.card{
+    transition: transform 500ms;
+    -webkit-transition: transform 500ms;
+    -moz-transition: transform 500ms;
+    -ms-transition: transform 500ms;
+    -o-transition: transform 500ms;
+}
+.card:hover {
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
 }

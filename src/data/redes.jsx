@@ -11,7 +11,7 @@ export const redes = [
         nombre: 'github',
         url: 'https://github.com/dailinr',
         icon: 'bi bi-github',
-        color: '#FFFF'
+        color: 'black'
     },
     {
         id: 3,

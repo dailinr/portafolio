@@ -6,6 +6,7 @@ import { informacion } from '../data/info_personal'
 import { lenguajes } from '../data/lenguajes'
 import { redes } from '../data/redes'
 
+
 export const Inicio = ( ) => {
     
   return (
@@ -28,7 +29,7 @@ export const Inicio = ( ) => {
                     {redes.map((red) => (
                         
                         <a key={red.id} href={red.url} target="_blank" rel="noreferrer">
-                            <i className={red.icon} style={{ color: red.color }}></i>
+                            <i className={red.icon} style={{ backgroundColor: red.color, padding: '4px 6px', borderRadius: '13px'}}></i>
                         </a>
                     ))}
                 </div>

@@ -8,7 +8,21 @@ import { redes } from '../data/redes'
 
 
 export const Inicio = ( ) => {
-    
+
+    const handleDownloadCV = () => {
+        const cvPath = '../public/dailinromeroCV.pdf';
+
+        window.open( cvPath, '_blank'); // Abrir el PDF en una nueva pestaña del navegador
+      
+        // Forzar la descarga del PDF
+        const link = document.createElement('a'); // Crea un elemento <a> temporalmente en el DOM para iniciar la descarga
+        link.href = cvPath;
+        link.setAttribute('download', 'dailinromeroCv.pdf'); // Esto sugiere el nombre de archivo para guardar
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
   return (
     <div className='inicio'>
         
@@ -38,7 +52,9 @@ export const Inicio = ( ) => {
                     {informacion.correo}
                 </p>
 
-                <button className="cv-button ">Descargar CV</button>
+                <button className="cv-button" onClick={handleDownloadCV} >
+                    Descargar CV
+                </button>
             </div>
         </div>
 

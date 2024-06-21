@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/proyectos.css'
 import { trabajos } from '../data/trabajos'
+import { lenguajes } from '../data/lenguajes'
 
 export const Proyectos = () => {
 
@@ -26,13 +27,24 @@ export const Proyectos = () => {
                 {trabajos.descripcion}
               </p>
 
-              <button className="card-button mt-2 d-flex">Ver</button>
+              <button className="card-button mt-2 d-flex">
+                <a href={trabajos.link} target="_blank" style={{textDecoration: 'none', color: 'white'}} >Ver</a>
+              </button>
               
               <div className='lenguajes'>
-                <i className='bx bxl-html5' style={{color: '#E34F26'}}></i>
-                <i className='bx bxl-css3' style={{color: '#1572B6'}}></i>
-                <i className='bx bxl-react' style={{color: '#61DAFB'}}></i>
-                <i className='bx bxl-php' style={{color: '#777BB4'}}></i>
+                {trabajos.lenguajes.map((lenguajeNombre, index) => {
+                  
+                  const lenguaje = lenguajes.find(l => l.nombre === lenguajeNombre);
+                  
+                  return lenguaje ? (
+
+                    <span key={index} className='bi' style={{color: lenguaje.color }}>
+                      <i className={lenguaje.icon}></i>
+                    </span>
+                  ) : null;
+
+                })}
+
               </div>
               
             </div>

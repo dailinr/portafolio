@@ -38,8 +38,8 @@ export const Proyectos = () => {
                   
                   return lenguaje ? (
 
-                    <span key={index} className='bi' style={{color: lenguaje.color }}>
-                      <i className={lenguaje.icon}></i>
+                    <span key={index} className='bi' >
+                      <i className={lenguaje.icon} style={{color: lenguaje.color }}></i>
                     </span>
                   ) : null;
 

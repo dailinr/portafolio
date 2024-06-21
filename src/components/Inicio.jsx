@@ -1,135 +1,102 @@
 import React from 'react'
 import '../css/inicio.css'
 import { Link } from 'react-router-dom'
+import { trabajos } from '../data/trabajos'
+import { informacion } from '../data/info_personal'
+import { lenguajes } from '../data/lenguajes'
+import { redes } from '../data/redes'
 
 export const Inicio = ( ) => {
-    const imagenes = {
-        monitorias: '../public/monitorias.jpg',
-        blog: '../public/blog-web.jpg',
-        aero: '../public/aero-proy.jpg'
-    }
+    
   return (
     <div className='inicio'>
         
-
         <div className='perfil'>
+
             <div className="perfil-image">
                 <img src="../public/perfil.jpeg" alt="image proyecto" />
             </div>
+
             <div className="perfil-content">
-                <h3 className="perfil-title">Dailin Romero</h3>
+
+                <h3 className="perfil-title">{informacion.nombreCompleto}</h3>
                 <p className="perfil-description">
-                    Estudiante de ing sistemas
+                    {informacion.ocupacion}
                 </p>
                 
-                
                 <div className='redes'>
-                    <i className='bi bi-linkedin' style={{color: '#0A66C2'}}></i>
-                    <i className='bi bi-github'></i>
-                    <i className='bi bi-twitter' style={{color: '#1DA1F2'}}></i>
-                    <i className='bi bi-youtube' style={{color: 'red'}}></i>
+                    {redes.map((red) => (
+                        
+                        <a key={red.id} href={red.url} target="_blank" rel="noreferrer">
+                            <i className={red.icon} style={{ color: red.color }}></i>
+                        </a>
+                    ))}
                 </div>
                 
                 <p className="correo">
-                    dailinromero123@gmail.com
+                    {informacion.correo}
                 </p>
 
                 <button className="cv-button ">Descargar CV</button>
-                
             </div>
         </div>
 
-        <div className='idk'>
-
-        </div> 
-
-        
+        <div className='idk'>  </div> 
 
         <div className='sobreMi '>
-            <h4>Hola, soy Dailin Romero</h4>
+            
+            <h4>Hola, soy {informacion.nombreCompleto}</h4>
             <div className='img-sb'>
-            <img  src="../public/coding-2-91-removebg-preview.png" alt="" />
+                <img  src="../public/coding-2-91-removebg-preview.png" alt="" />
             </div>
             
             <div className='sb-content'>
-                
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolor molestiae non unde accusantium corporis pariatur quae doloremque tempora tempore, laudantium, facilis doloribus, facere vel! Esse laborum placeat aut totam.</p>
-                
+                <p> 
+                    tengo {informacion.edad} años &nbsp;
+                    {informacion.descripcion}
+                </p>
             </div>
             
         </div>
 
         <div className='proyecto '>
             
-            <div className="cardP">
+            {trabajos.slice(0, 2).map((trabajos) => (
                 
-                <div className="cardP-content " 
-                    style={{
-                        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../public/monitorias.jpg")' 
-                    }}>
+                <div key={trabajos.id} className="cardP">
                     
-                    <div>
-                        <h6 className="cardP-title">
-                            Monitorias unimag 
-                           
-                        </h6> 
+                    <div className="cardP-content " 
+                        style={{
+                            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${trabajos.image})`,
+                        }}>
                         
-                        <p className="cardP-description">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        </p>
-                    </div>
-                    <div className='links'>
-                        <a className="btn" href="https://github.com/dailinr/blog-web" target="_blank" >
-                            <i className="bi bi-github text-center "></i>
-                        </a>
-                        <a className="btn" title="ir a la página" href="https://blogweblive.000webhostapp.com/" target="_blank" >
-                            <i className='bx bx-link-external'></i>
-                        </a>
-                    </div>
-                    
-                </div>
+                        <div>
+                            <h6 className="cardP-title"> {trabajos.titulo} </h6> 
+                            
+                            <p className="cardP-description">
+                                {trabajos.descripcion}
+                            </p>
+                        </div>
 
-                
-            </div>
-
-            
-
-            <div className="cardP">
-                
-                <div className="cardP-content " 
-                    style={{
-                        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../public/blog-web.jpg")' 
-                    }}>
-                    
-                    <div>
-                        <h6 className="cardP-title">
-                            Blog articulos
-                           
-                        </h6> 
+                        <div className='links'>
+                            <a className="btn" href={trabajos.github} target="_blank" >
+                                <i className="bi bi-github text-center "></i>
+                            </a>
+                            <a className="btn" title="ir a la página" href={trabajos.link} target="_blank" >
+                                <i className='bx bx-link-external'></i>
+                            </a>
+                        </div>
                         
-                        <p className="cardP-description">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        </p>
                     </div>
-                    <div className='links'>
-                        <a className="btn" href="https://github.com/dailinr/blog-web" target="_blank" >
-                            <i className="bi bi-github text-center "></i>
-                        </a>
-                        <a className="btn" title="ir a la página" href="https://blogweblive.000webhostapp.com/" target="_blank" >
-                            <i className='bx bx-link-external'></i>
-                        </a>
-                    </div>
-                    
                 </div>
-
-                
-            </div>
+            ))}
             
            <Link style={{display: 'none'}} to="/proyectos">ver más</Link>
             
         </div> 
 
         <div className='skills skills-inicio' >
+
             <div>
                 <h6>Front-end</h6>
                 
@@ -141,6 +108,7 @@ export const Inicio = ( ) => {
                 <i className='bx bxl-react' style={{color: '#61DAFB'}}></i>
                 
             </div>
+
             <div>
                 <h6>Back-end</h6>
                 <i className='bx bxl-java' style={{color: '#007396'}}></i>
@@ -148,6 +116,7 @@ export const Inicio = ( ) => {
                 <i className='bx bxl-postgresql' style={{color: ' #336791'}}></i>
                 <i class='bx bxl-c-plus-plus'  style={{color: '#00599C'}}></i>
             </div>
+
             <div >
                 <h6>Otros</h6>
                 <i className='bx bxl-git' style={{color: '#F05032'}}></i>
@@ -156,10 +125,7 @@ export const Inicio = ( ) => {
                 {/* <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style={{fill: 'rgba(255, 255, 255, 1)'}}><path d="M15.332 8.668a3.333 3.333 0 0 0 0-6.663H8.668a3.333 3.333 0 0 0 0 6.663 3.333 3.333 0 0 0 0 6.665 3.333 3.333 0 0 0 0 6.664A3.334 3.334 0 0 0 12 18.664V8.668h3.332z"></path><circle cx="15.332" cy="12" r="3.332"></circle></svg> */}
 
             </div>
-            
         </div>
-
-        
     </div>
   )
 }

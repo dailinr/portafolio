@@ -120,7 +120,8 @@
 }
 
 .redes .bi:hover{
-    background-image: linear-gradient(80deg, #FAD02E, #5a4a0e);
+    color: gray !important;
+    transition: all 180ms; 
 }  
 .cv-button {
     background-color: inherit;

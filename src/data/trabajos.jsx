@@ -32,7 +32,7 @@ export const trabajos = [
         image: '../public/...',
         titulo: 'Psiconote',
         descripcion: 'Plataforma web para el registro de citas psicologicas',
-        lenguajes: ['react'],
+        lenguajes: ['html', 'css', 'react'],
         link: '',
         github: 'https://github.com/dailinr/psiconotes'
     },

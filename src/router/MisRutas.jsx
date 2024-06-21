@@ -21,6 +21,13 @@ export const MisRutas = () => {
                 <Route path="/sobremi" element={<SobreMi />} />
                 <Route path="/proyectos" element={<Proyectos />} />
                 <Route path="/contacto" element={<Contacto />} />
+
+                <Route path="*" element={ 
+                  <div className="page">
+                    <h1 className='d-flex justify-content-center'>Error 404</h1> 
+                  </div>
+                } />
+                
             </Routes>
         </section>
 

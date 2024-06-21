@@ -28,7 +28,8 @@ export const Proyectos = () => {
               </p>
 
               <button className="card-button mt-2 d-flex">
-                <a href={trabajos.link} target="_blank" style={{textDecoration: 'none', color: 'white'}} >Ver</a>
+                <a href={trabajos.link ? trabajos.link : trabajos.github} 
+                target="_blank" style={{textDecoration: 'none', color: 'white'}} >Ver</a>
               </button>
               
               <div className='lenguajes'>

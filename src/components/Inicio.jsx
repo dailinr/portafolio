@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/inicio.css'
+import { Link } from 'react-router-dom'
 
 export const Inicio = ( ) => {
     const imagenes = {
@@ -123,7 +124,8 @@ export const Inicio = ( ) => {
 
                 
             </div>
-
+            
+           <Link style={{display: 'none'}} to="/proyectos">ver más</Link>
             
         </div> 
 

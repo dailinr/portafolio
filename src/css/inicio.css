@@ -5,6 +5,11 @@
     gap: 25px;
     padding: 30px 30px ;
 }
+.page{
+    margin: 10px;
+    padding: 20px 50px ;
+    min-height: 100vh;
+}
 
 .perfil{
     grid-column: 1/2; 

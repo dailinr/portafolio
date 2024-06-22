@@ -54,8 +54,8 @@
 }
 
 .card-button {
-    /* background-color: #FAD02E; */
-    background-image: linear-gradient(80deg, #FAD02E, #5a4a0e);
+    /*background-color: #FAD02E;
+    */background-image: linear-gradient(80deg, #FAD02E, #5a4a0e);
     color:  black;
     border: none;
     padding: 4px 8px;
@@ -71,10 +71,16 @@
     left: 15px;
     width: 80px;
     height: 30px;
+    transition: transform 400ms;
+    -webkit-transition: transform 400ms;
+    -moz-transition: transform 400ms;
+    -ms-transition: transform 400ms;
+    -o-transition: transform 400ms;
 }
 
 .card-button:hover {
     background-color: #e5bb0e;
+    
 }
 
 .lenguajes{

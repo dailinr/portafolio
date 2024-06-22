@@ -1,0 +1,84 @@
+.page{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.cont-sobremi{
+    flex: 1; 
+}
+
+.ab-image{
+    width: 300px;
+    height: 300px;
+    float: right;
+    shape-outside: circle(60%);
+    -webkit-shape-outside: circle(60%);
+    margin-right: 50px;  /* Ajusta según sea necesario */
+    
+}
+.ab-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.biografia{
+    overflow: hidden;
+}
+.fila-2{
+    /* display: flex;
+    margin-top: 30px */
+}
+
+.datos{
+    margin-top: 30px;
+    border: 1px solid #fad02e;
+    overflow: hidden;
+    padding: 20px 30px;
+    min-width: 400px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto;
+    row-gap: 40px;
+}
+.datos strong, .skills-sb h4{
+    color: #fad02e
+}
+.skills-sb h4{
+    margin-bottom: 10px;
+}
+.skills-sb{
+    margin-top: 40px;
+    display: flex; 
+    gap: 50px
+}
+.skills-sb .bx{
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+    .cont-sobremi{
+        display: flex;
+        flex-direction: column;
+    }
+    .ab-image{
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        
+    }
+    .biografia{
+        margin-top: 30px;
+        min-height: 400px;
+    }
+    .datos{
+        width: 100%;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        min-height: 350px;
+        margin-top: 25px;
+    }
+}

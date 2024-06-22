@@ -3,12 +3,11 @@ import '../css/inicio.css'
 import { Link } from 'react-router-dom'
 import { trabajos } from '../data/trabajos'
 import { informacion } from '../data/info_personal'
-import { lenguajes } from '../data/lenguajes'
+// import { lenguajes } from '../data/lenguajes'
 import { redes } from '../data/redes'
 
-
 export const Inicio = ( ) => {
-
+    
     const handleDownloadCV = () => {
         const cvPath = '../public/dailinromeroCV.pdf';
 
@@ -62,11 +61,11 @@ export const Inicio = ( ) => {
 
         <div className='sobreMi '>
             
-            <h4>Hola, soy {informacion.nombreCompleto}</h4>
-            <div className='img-sb'>
-                <img  src="../public/coding-2-91-removebg-preview.png" alt="" />
-            </div>
             
+            <div className='img-sb'>
+                <img  src="../public/Learn Programming.png" alt="" />
+            </div>
+            <h4>Hola, soy {informacion.nombreCompleto}</h4>
             <div className='sb-content'>
                 <p> 
                     tengo {informacion.edad} años &nbsp;
@@ -84,7 +83,8 @@ export const Inicio = ( ) => {
                     
                     <div className="cardP-content " 
                         style={{
-                            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${trabajos.image})`,
+                            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${trabajos.image})`
+                            
                         }}>
                         
                         <div>

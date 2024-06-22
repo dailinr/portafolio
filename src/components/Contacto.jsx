@@ -2,7 +2,8 @@ import React from 'react'
 import './../css/contacto.css'
 
 export const Contacto = () => {
-
+  
+  // const {contextTheme} = useContextTheme  
   // Selecciona todos los inputs de tipo texto y todos los textareas
   const inputs = document.querySelectorAll('input[type="text"], textarea');
 
@@ -31,7 +32,7 @@ export const Contacto = () => {
         
       <section className='contacto'>
 
-        <h3>Contactame </h3>
+        <h3 className='contacto-title'>Contactame </h3>
 
         <form className='form-container'>
           

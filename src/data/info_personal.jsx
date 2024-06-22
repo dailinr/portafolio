@@ -5,11 +5,11 @@ export const informacion = {
     fechaNacimiento: new Date(2002, 3, 27), 
     ocupacion: 'Estudiante de ing sistemas',
     correo: 'dailinromero@gmail.com',
-    descripcion: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, nemo. Quod, odio perferendis? Facere doloribus repellendus eaque illum temporibus magnam magni ab odio consequatur, repudiandae accusantium sapiente veniam eius sunt.',
+    descripcion: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, nemo. Quod, odio perferendis? Facere doloribus repellendus eaque illum temporibus magnam magni ab odio consequatur, repudiandae accusantium sapiente veniam eius sunt. descripcion: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, nemo. Quod, odio perferendis? Facere doloribus repellendus eaque illum temporibus magnam magni ab odio consequatur, repudiandae accusantium sapiente veniam eius sunt.',
     habilidades: [
         'Desarrollo web',
     ],
-    
+    ciudad: 'Santa Marta',
 
     get edad() {
         const hoy = new Date();

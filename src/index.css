@@ -13,12 +13,14 @@ body {
   display: grid;
   grid-template-columns: 200px auto;
   height: 100vh;
-  background-color: #262727;
+  /* background-color: #262727; */
+  background-color: #141414;
 } 
 
 .aside {
   grid-column: 1/2;
-  background-color:#262727;
+  /* background-color:#262727; */
+  background-color: #141414;
 }
 
 .contenido {
@@ -57,7 +59,7 @@ body {
     width: 100%;
     grid-row: 1/2;
     height: 40px;
-    background-color: #262727;
+    /* background-color: #262727; */
     display: flex;
     justify-content: space-around;
     align-items: center; 
@@ -76,6 +78,10 @@ body {
   }
   .icon-terminal{
     display: none;
+  }
+  .modeIcon{
+    top: 50px !important;
+
   }
 }
 

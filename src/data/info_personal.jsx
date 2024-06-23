@@ -5,7 +5,9 @@ export const informacion = {
     fechaNacimiento: new Date(2002, 3, 27), 
     ocupacion: 'Estudiante de ing sistemas',
     correo: 'dailinromero@gmail.com',
-    descripcion: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, nemo. Quod, odio perferendis? Facere doloribus repellendus eaque illum temporibus magnam magni ab odio consequatur, repudiandae accusantium sapiente veniam eius sunt. descripcion: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, nemo. Quod, odio perferendis? Facere doloribus repellendus eaque illum temporibus magnam magni ab odio consequatur, repudiandae accusantium sapiente veniam eius sunt.',
+    descripcion_corta: "Soy estudiante de ingeniería en sistemas, actualmente estoy en mis últimos semestres. Mi enfoque va hacia el diseño y desarrollo de páginas web. Mi formación me ha brindado las habilidades necesarias que me han permitido desarrollar proyectos completos y funcionales.",
+    descripcion_larga: "Tengo un sólido entendimiento en desarrollo web y bases de datos relacionales. Domino muy bien la definición de requisitos, el diseño y normalización de bases de datos. Poseo habilidades en modelado de casos de uso, diagramas UML y aplicación de métricas en diseño y código. ",
+    
     habilidades: [
         'Desarrollo web',
     ],

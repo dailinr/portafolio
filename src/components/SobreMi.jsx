@@ -17,7 +17,8 @@ export const SobreMi = () => {
         <div className='biografia'>
           <h3>Biografia<hr/></h3>
           <p>
-            {informacion.descripcion}
+            {informacion.descripcion_corta} <br/><br/>
+            {informacion.descripcion_larga}
           </p>
         </div>
 

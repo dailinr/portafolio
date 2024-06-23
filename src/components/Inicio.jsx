@@ -68,8 +68,8 @@ export const Inicio = ( ) => {
             <h4>Hola, soy {informacion.nombreCompleto}</h4>
             <div className='sb-content'>
                 <p> 
-                    tengo {informacion.edad} años &nbsp;
-                    {informacion.descripcion}
+                    {/* tengo {informacion.edad} años &nbsp; */}
+                    {informacion.descripcion_corta}
                 </p>
             </div>
             

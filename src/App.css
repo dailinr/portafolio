@@ -115,8 +115,8 @@
 }
 #light .pg-sbmi{
     background-color: #FEFFFF !important;
-    border-radius: 16px;
-    margin: 15px 20px;
+    /* border-radius: 16px; */
+    margin: 0px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px !important;
 }
 

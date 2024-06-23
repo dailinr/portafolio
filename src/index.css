@@ -13,18 +13,17 @@ body {
   display: grid;
   grid-template-columns: 200px auto;
   height: 100vh;
-  /* background-color: #262727; */
   background-color: #141414;
+  grid-template-areas: "nav contenido";
 } 
 
 .aside {
-  grid-column: 1/2;
-  /* background-color:#262727; */
+  grid-area: nav;
   background-color: #141414;
 }
 
 .contenido {
-  grid-column: 2/3;
+  grid-area: contenido;
   background-color: #141414;
   width: calc(100% - 20px);
   margin: 10px;
@@ -46,32 +45,35 @@ body {
 @media (max-width: 800px) {
   .app {
     grid-template-columns: auto;
-    grid-template-rows: 40px 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "contenido"
+      "nav"
+    ;
   } 
   .contenido{
-    grid-row: 2/3;
-    margin: 10px;
-    width: calc(100% - 20px);
+    grid-area: contenido;
+    margin: 5px;
+    width: 100%; 
     border-radius: 10px;
   }
   .aside {
-    grid-column: 1/-1;
+    grid-area: nav;
+    position: static;
     width: 100%;
-    grid-row: 1/2;
-    height: 40px;
-    /* background-color: #262727; */
+    height: auto;
     display: flex;
-    justify-content: space-around;
-    align-items: center; 
+    align-items: center;  
   }
+  
   .aside .nav {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
   }
   .aside .nav-link {
-    padding-top: 0 ;
-    padding-bottom: 0;
+    
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,8 +82,7 @@ body {
     display: none;
   }
   .modeIcon{
-    top: 50px !important;
-
+    top: 10px !important;
   }
 }
 

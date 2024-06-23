@@ -43,9 +43,6 @@
 .proyecto{
     grid-row: 2/3;
     grid-column: 2/4; 
-    
-    /* min-height: 240px; */
-    /* background-color: #161717; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
@@ -330,9 +327,6 @@
         width: 100%;
         
     } 
-    /* .inicio{
-        flex-direction: row;
-    } */
     .skills{
         grid-row: 6 /span 3
     }

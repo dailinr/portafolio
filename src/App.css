@@ -138,3 +138,10 @@
 #light .bxl-github{
     color: black !important
 }
+
+@media (max-width: 800px) {
+
+    #light .aside, #dark .aside{
+        padding: 5px 0 !important;
+    }
+}

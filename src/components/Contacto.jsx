@@ -33,7 +33,7 @@ export const Contacto = () => {
   },[]);
 
   return (
-    <div className='page'>
+    <div className='page page-contacto'>
         
       <section className='contacto'>
 

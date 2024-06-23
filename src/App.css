@@ -120,8 +120,8 @@
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px !important;
 }
 
-#light .pg-sbmi .datos{
-    border: 1px solid #095252 !important
+#light .pg-sbmi .datos > *:nth-child(2n)::before{
+    background-color: #095252 !important;
 }
 #light .pg-sbmi .ab-image, #light .inicio .img-sb{
     background: url('../public/Learn_Programming_light.png') !important;
@@ -144,4 +144,11 @@
     #light .aside, #dark .aside{
         padding: 5px 0 !important;
     }
-}
+} 
+
+@media (max-width: 600px) {
+
+    #light .pg-sbmi .datos > *:nth-child(2n)::before{
+        background-color: inherit !important;
+    }
+} 

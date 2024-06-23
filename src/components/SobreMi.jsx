@@ -22,12 +22,12 @@ export const SobreMi = () => {
           </p>
         </div>
 
-        
+        < div className='datos ' >
 
-        <div className='datos'>
           <p><strong>Edad </strong> <br/>{informacion.edad} años</p>
           <p><strong>Ocupación </strong> <br/>{informacion.ocupacion}</p>
           <p><strong>Dirección </strong> <br/>{informacion.ciudad}</p>
+          <p><strong>Formación </strong> <br/>{informacion.formacion}</p>
           <p><strong>Email </strong> <br/>{informacion.correo}</p>
           
         </div>

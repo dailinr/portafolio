@@ -28,7 +28,7 @@ export const Proyectos = () => {
               </p>
 
               <button className="card-button mt-2 d-flex">
-                <a href={trabajos.link ? trabajos.link : trabajos.github} 
+                <a className="boton-card" href={trabajos.link ? trabajos.link : trabajos.github} 
                 target="_blank" style={{textDecoration: 'none', color: 'white'}} >Ver</a>
               </button>
               

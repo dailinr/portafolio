@@ -123,13 +123,18 @@
 #light .pg-sbmi .datos{
     border: 1px solid #095252 !important
 }
-#light .pg-sbmi .ab-image{
+#light .pg-sbmi .ab-image, #light .inicio .img-sb{
     background: url('../public/Learn_Programming_light.png') !important;
     background-size: cover !important;
     background-position: center !important;
 }
-#dark .pg-sbmi .ab-image{
+#dark .pg-sbmi .ab-image, #dark .inicio .img-sb{
     background: url('../public/Learn Programming.png') !important;
     background-size: cover !important;
     background-position: center !important;
+}
+
+
+#light .bxl-github{
+    color: black !important
 }

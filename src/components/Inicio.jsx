@@ -63,7 +63,7 @@ export const Inicio = ( ) => {
             
             
             <div className='img-sb'>
-                <img  src="../public/Learn Programming.png" alt="" />
+                {/* <img  src="../public/Learn Programming.png" alt="" /> */}
             </div>
             <h4>Hola, soy {informacion.nombreCompleto}</h4>
             <div className='sb-content'>

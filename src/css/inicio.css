@@ -190,10 +190,6 @@
     max-height: 100px;
     overflow: hidden;
 }
-.img-sb img{
-    width: 100%;
-    height: 100%;
-}
 
 
 .skills div{
@@ -289,15 +285,40 @@
         grid-row: 3/6;
         grid-column: 1/-1;
     }
+    .sobreMi h4{
+        font-size: larger;
+    }
+     .sobreMi .sb-content{
+        font-size: medium;
+    }
+    #dark .inicio .img-sb, #light .inicio .img-sb{
+        width: 100px;
+        height: 100px;  
+        
+    }
+    .img-sb{
+        margin-right: -10px !important;
+    }
 
 }
 @media (max-width: 600px) {
-   .idk{
-    display: none;
-   }
-    .sobreMi img {
+    .idk{
         display: none;
-    } 
+    }
+    .sobreMi h4{
+        font-size: larger;
+    }
+    .sobreMi .sb-content{
+        font-size: medium;
+    }
+    #dark .inicio .img-sb, #light .inicio .img-sb{
+        width: 80px;
+        height: 80px;  
+        
+    }
+    .img-sb{
+        margin-right: -10px !important;
+    }
 
     .skills , .proyecto{
         grid-template-columns: 1fr;

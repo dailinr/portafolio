@@ -68,4 +68,12 @@
         min-height: 350px;
         margin-top: 25px;
     }
+    .skills-sb{
+        flex-direction: column;
+        row-gap: 30px
+    }
+    .skills-sb .bx{
+        font-size: 30px;
+        margin-right: 5px;
+    }
 }

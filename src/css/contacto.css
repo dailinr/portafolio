@@ -44,22 +44,11 @@ input[type="text"], textarea{
     margin-top: 20px !important;
 }
 
-@media (max-width: 600px){
-    .contacto{
-        max-width: 100%;
-        padding: 30px 20px;
-        
-    }
-
-    input[type="text"], textarea{
-        width: 100%
-    }
-  }
-
 .btn-enviar{
     padding: 5px;
     border-radius: 5px;
     color: black !important;
+    font-weight: 400;
     background-color: #fad02e;
     width: 100px;
     border: 0px;
@@ -69,5 +58,34 @@ input[type="text"], textarea{
     right: 0;
 }
 .btn-enviar:hover{
-    background-color: #ebd064;
+    background-color: #c5a009;
+    font-weight: 500;
+    
 }
+
+@media (max-width: 1100px){
+
+    .contacto{
+        max-width: 80%;
+        padding: 30px 20px;
+    }
+
+    input[type="text"], textarea{
+        width: 100%
+    }
+}
+
+
+
+@media (max-width: 600px){
+
+    .contacto{
+        max-width: 100%;
+        padding: 30px 20px;
+    }
+
+    input[type="text"], textarea{
+        width: 100%
+    }
+}
+

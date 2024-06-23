@@ -96,7 +96,8 @@
     }
     .skills-sb{
         flex-direction: column;
-        row-gap: 30px
+        row-gap: 30px;
+        margin-top: 15px;
     }
     .skills-sb .bx{
         font-size: 30px;

@@ -21,9 +21,10 @@
 } 
 /* SOBRE MI - NARANJA */
 #light .sobreMi{
-    background-color: #f5d4c6 !important;
+    /* background-color: #f5d4c6 !important; */
+    background-color: #c9e2e2 !important;
     box-shadow: none;
-    color: #f38702 !important;
+    color: #095252  !important;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 /* BARRA LATERAL */
@@ -57,21 +58,25 @@
 }
 #light h1, #light h2, #light h3, #light h5, #light .cont-proy .card-title,
  #light .contacto .contacto-title{
-    color: #e08210 !important
+    color: #095252!important
 }
-
-#light .contacto input[type="text"]
+/* #light .contacto:focus{
+    box-shadow: #095252  0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px !important;
+} */
+#light .contacto  input[type="text"],
 #light .contacto textarea{
-    border-bottom: 1px solid #e08210 !important ;
- }
+    border-bottom: 1px solid #095252 !important ;
+}
 
 #light input[type="submit"], #light .card-button  {
-    background: #e08210 !important;
+    background: #095252 !important;
     color: white !important;
-    border: 1px solid #e08210 !important;
+}
+#light .cont-proy .boton-card {
+    color: white !important;
 }
 #light input[type="submit"]:hover, #light .card-button:hover {
-    background: #ff920c !important
+    background: #127777 !important
 }
 #light .skills h6 , #light .perfil-title{
     color: #095252  !important;

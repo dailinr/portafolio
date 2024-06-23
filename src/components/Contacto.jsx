@@ -15,8 +15,10 @@ export const Contacto = () => {
 
     // Función para cambiar el fondo de .contacto
     function cambiarFondo() {
+        // if(contextTheme === "light")
+        contacto.style.setProperty('box-shadow', '#fad02e 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px', 'important');
         
-      contacto.style.setProperty('box-shadow', '#fad02e 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px', 'important');
+      
     }
 
     // Función para revertir el fondo de .contacto

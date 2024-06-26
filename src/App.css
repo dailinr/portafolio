@@ -103,6 +103,10 @@
 #light .cv-button:hover{
     background: #107777 ;
 }
+#light .proyecto{
+    
+    box-shadow: none;
+}
 #light .proyecto .cardP-title, #light .proyecto .links .bi, #light .proyecto .links .bx{
     color: #ff920c;
     font-weight: 700;

@@ -1,9 +1,11 @@
 .inicio{
     display: grid;
     grid-template-columns: repeat(autofit, minmax(250px, 1fr));
-    grid-auto-rows: minmax(100px, auto);
+    /* grid-auto-rows: minmax(100px, auto); */
+    grid-template-rows: auto 200px auto; 
     gap: 25px;
     padding: 30px 30px ;
+    /* min-height: 100vh; */
 }
 .perfil{
     grid-column: 1/2; 
@@ -40,8 +42,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
-    background-color: transparent;
-    height: 200px;
+    background-color: inherit;
+    /* height: 100%; */
+    height: auto;
     border-radius: 16px; 
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
@@ -59,7 +62,8 @@
 /* -------- ------------------------------------------------------------------- */
 
 .perfil{
-    max-height: 410px;
+    /* max-height: 100%; */
+    height: auto;
     width: 250px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border-radius: 16px;
@@ -152,6 +156,10 @@
     background-image: linear-gradient(80deg, #FAD02E, #5a4a0e);
     color: black;
 }
+.sobreMi{
+    /* min-height: 100%; */
+    height: 200px;
+}
 .sobreMi h4{
     margin-bottom: 10px;
 }
@@ -171,24 +179,20 @@
     margin-right: 10px;  /* Ajusta según sea necesario */
     
 }
-.sobreMi, .sb-content{
-    overflow: hidden;
-    
-}
-.sobreMi{
-    max-height: 180px;
-    
-}
+ 
+
 .sb-content{
-    max-height: 100px;
     overflow: hidden;
+    height: 100px;
+    font-size: medium;
 }
 
 
 .skills div{
     background-color: #262727;
     border-radius: 16px;
-    min-height: 120px; 
+    /* min-height: 100%;  */
+    height: auto;
     padding: 15px 20px;
     color: white;
     text-align: center;
@@ -206,8 +210,8 @@
     color: white;
 }
 .cardP{
-    height: 200px;
-    max-height: 200px;
+    height: auto;
+    /* min-height: 100%;  */
     border-radius: 16px;
     background-color: #262727;
     overflow: hidden;
@@ -274,10 +278,12 @@
 /* ------------------------------------------------------------------- */
 @media (max-width: 1000px) {
     
-
+    .idk{
+        display: none;
+    }
     .skills{
-        grid-row: 3/6;
-        grid-column: 1/-1;
+        /* grid-row: 3/6; */
+        grid-column: 1/4;
     }
     .sobreMi h4{
         font-size: larger;
@@ -296,9 +302,7 @@
 
 }
 @media (max-width: 600px) {
-    .idk{
-        display: none;
-    }
+    
     .sobreMi h4{
         font-size: larger;
     }
@@ -312,20 +316,33 @@
     }
     .img-sb{
         margin-right: -10px !important;
+        margin-left: 10px;
     }
-
+    .perfil, .sobreMi, .proyecto, .skills {
+        grid-column: 1/-1;
+        width: 100%;
+    } 
     .skills , .proyecto{
         grid-template-columns: 1fr;
     }
+    .inicio{
+        grid-template-rows: 1fr 200px 1fr 1fr ;
+        padding: 40px
+    }
+    /* --------------------------------------- */
 
-    .perfil, .sobreMi, .proyecto, .skills {
-        grid-column: 1/-1;
-        grid-row: span 1;
-        width: 100%;
+    .perfil{
+        grid-row: 1/2;
+    }
+    .sobreMi{
+        grid-row: 2/3;
+    }
+    .proyecto{
+        grid-row: 3/4;
         
-    } 
+    }
     .skills{
-        grid-row: 6 /span 3
+        grid-row: 4/5;
     }
     
 }

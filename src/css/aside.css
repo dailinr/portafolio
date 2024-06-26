@@ -1,9 +1,9 @@
 .aside{
     height: 100vh;
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: center;
-    padding: 30px 10px
+    padding: 30px 10px;
 }
 
 

@@ -6,7 +6,7 @@ import { lenguajes } from '../data/lenguajes'
 export const Proyectos = () => {
 
   return (
-    <div className='page'>
+    <div className='page page-proyecto'>
 
       <h3>Proyectos<hr/> </h3>
 
@@ -27,10 +27,18 @@ export const Proyectos = () => {
                 {trabajos.descripcion}
               </p>
 
-              <button className="card-button mt-2 d-flex">
-                <a className="boton-card" href={trabajos.link ? trabajos.link : trabajos.github} 
-                target="_blank" style={{textDecoration: 'none', color: 'white'}} >Ver</a>
-              </button>
+              <div className='links-p '>
+                
+                {trabajos.link && 
+                  <a className="btn-p" title="ir a la página" href={trabajos.link} target="_blank" >
+                    <i className='bx bx-link-external'></i>
+                  </a>
+                }
+                
+                <a className="btn-p" href={trabajos.github} target="_blank" >
+                  <i className="bi bi-github "></i>
+                </a>
+              </div>
               
               <div className='lenguajes'>
                 {trabajos.lenguajes.map((lenguajeNombre, index) => {

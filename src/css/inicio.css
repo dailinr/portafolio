@@ -100,6 +100,9 @@
 .perfil-description {
     font-size: 0.9em;
     margin: 0 0 16px;
+    text-transform: lowercase;
+    font-style: oblique;
+    font-weight: 500;
 }
 .perfil .correo{
     font-style: italic;
@@ -107,6 +110,7 @@
     color: #E3D8F1;
     margin-top: 20px;
     margin-bottom: 0;
+    font-weight: 500;
 }
 
 
@@ -117,18 +121,16 @@
     margin-top: 25px;
     margin-bottom: 10px;
 }
-.redes .bi{
+.redes .red-item{
     transition: transform 500ms;
-    -webkit-transition: transform 500ms;
-    -moz-transition: transform 500ms;
-    -ms-transition: transform 500ms;
-    -o-transition: transform 500ms;
 }
-
-.redes .bi:hover{
-    color: gray !important;
-    transform: scale(1.2);
+.redes .red-item:hover{
+    transform: scale(1.15);
+}
+.redes .red-item:active i{
+    color: gray
 }  
+
 .cv-button {
     background-color: inherit;
     color:  #FAD02E;
@@ -238,7 +240,7 @@
     font-weight: 600;
     font-size: 13px;
     border: 1px solid #e5bb0e;
-    
+    transition: transform 500ms;
 }
 .cardP .btn:hover .bi, .cardP .btn:hover .bx{
     color: inherit;
@@ -246,11 +248,12 @@
 .cardP .btn:hover{
     background-image: linear-gradient(80deg, #FAD02E, #5a4a0e);
     border: 1px solid #FAD02E;
+    transform: scale(1.1);
 }  
 .links{
     position: absolute;
     bottom: 15px;
-    right: 20px;
+    right: 25px;
     display: flex;
     gap: 10px;
 }

@@ -2,7 +2,7 @@ export const trabajos = [
 
     {
         id: 1,
-        image: '../public/monitorias.jpg',
+        image: './../public/monitorias.jpg',
         titulo: 'Easy-tutos',
         descripcion: 'Plataforma para monitorias academicas en la universidad del magdalena',
         lenguajes: ['html', 'css', 'react', 'php'],
@@ -11,7 +11,7 @@ export const trabajos = [
     },
     {
         id: 2,
-        image: '../public/blog-web.jpg',
+        image: './../public/blog-web.jpg',
         titulo: 'Blog articulos',
         descripcion: 'Pagina web donde se pueden publicar articulos',
         lenguajes: ['html', 'css', 'bootstrap', 'php'],
@@ -20,7 +20,7 @@ export const trabajos = [
     },
     {
         id: 3,
-        image: '../public/aero-proy.jpg',
+        image: './../public/aero-proy.jpg',
         titulo: 'Rutas aeropuerto',
         descripcion: 'Proyecto que ayuda a escoger mejor ruta al usuario',
         lenguajes: ['java'],
@@ -29,7 +29,7 @@ export const trabajos = [
     },
     {
         id: 4,
-        image: '../public/...',
+        image: './../public/...',
         titulo: 'Psiconote',
         descripcion: 'Plataforma web para el registro de citas psicologicas',
         lenguajes: ['html', 'css', 'react'],

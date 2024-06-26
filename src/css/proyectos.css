@@ -4,12 +4,11 @@
     display: flex;
     flex-flow: row wrap; /* los div se posicionan en filas conforme a su espacio */
     justify-content: center;
+    gap: 40px;
 }
 
 /* --------------------------------------------------- */
 .card {
-    margin-right: 40px;
-    margin-bottom: 30px;
     width: 270px;
     background-color: #262727 !important;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -47,40 +46,34 @@
     font-size: 0.9em;
     margin: 0 0 16px;
 }
-
-.card-button {
-    /*background-color: #FAD02E;
-    */background-image: linear-gradient(80deg, #FAD02E, #5a4a0e);
-    border: none;
-    padding: 4px 8px;
-    font-size: 13px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 500;
-    /*transition: background-color 0.3s;
-    */position: absolute;
+.links-p{
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
     display: flex;
-    justify-content: center;
-    bottom: 12px;
-    left: 15px;
-    width: 80px;
-    height: 30px;
-    transition: transform 200ms;
-    -webkit-transition: transform 200ms;
-    -moz-transition: transform 200ms;
-    -ms-transition: transform 200ms;
-    -o-transition: transform 200ms;
+    gap: 10px
 }
-.card-button a{
-    color: black !important;
+.links-p .btn-p{
+    padding: 2px 7px;
+    border-radius: 10px;
+    border: 1px solid #e5bb0e;
+    transition: all 500ms;
+    transition:  transform 500ms;
 }
-
-.card-button:hover {
-    transform: scale(1.04);
-    background-image: linear-gradient(80deg, #c7a51d, #c7a51d);
-    font-weight: 500;
+.links-p .bi, .links-p .bx{
+    color: #e5bb0e;
+    font-size: small;
+}
+.links-p .btn-p:hover {
+    
+    transform: scale(1.12);
 }
 
+.links-p .btn-p:hover i{
+    /* color: #141414; */
+    font-weight: 700;
+    
+}
 .lenguajes{
     position: absolute;
     bottom: 10px;
@@ -93,15 +86,17 @@
 }
 .card{
     transition: transform 500ms;
-    -webkit-transition: transform 500ms;
-    -moz-transition: transform 500ms;
-    -ms-transition: transform 500ms;
-    -o-transition: transform 500ms;
 }
 .card:hover {
     transform: scale(1.08);
-    -webkit-transform: scale(1.08);
-    -moz-transform: scale(1.08);
-    -ms-transform: scale(1.08);
-    -o-transform: scale(1.08);
+}
+
+@media (max-width: 600px) {
+
+    .cont-proy{
+      padding: 0 10%;  
+    } 
+    .card{
+        width: 100% 
+    } 
 }

@@ -5,7 +5,7 @@
     color: white;
 }
 
-#light .idk, #light .proyecto,
+#light .idk,
 #light .card, #light .card-content,
 #light .contacto,  #light .skills div{
     background-color: #FEFFFF ;
@@ -29,8 +29,10 @@
 }
 /* BARRA LATERAL */
 #light .aside, #light{
-    background-color: #FEFFFF ;
+    background-color: #FEFFFF !important;
     /* background-color: #E4F6F8; */
+
+
 }
 
 /* FONDO DE LA PAGINA */
@@ -64,6 +66,7 @@
     box-shadow: #095252  0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px !important;
 } */
 #light .contacto  input[type="text"],
+#light .contacto  input[type="email"],
 #light .contacto textarea{
     border-bottom: 1px solid #095252 !important ;
 }
@@ -72,9 +75,15 @@
     background: #095252 !important;
     color: white !important;
 }
-#light .cont-proy .boton-card {
-    color: white !important;
+/* s--------- */
+#light .cont-proy .links-p .btn-p{
+    border: 1px solid #095252 !important;
 }
+#light .cont-proy .links-p i{
+    color: #095252;
+    font-weight: 600;
+}
+
 #light input[type="submit"]:hover, #light .card-button:hover {
     background: #127777 !important
 }

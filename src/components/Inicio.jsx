@@ -28,20 +28,20 @@ export const Inicio = ( ) => {
         <div className='perfil'>
 
             <div className="perfil-image">
-                <img src="../public/perfil.jpeg" alt="image proyecto" />
+                <img src="../public/perfil-ilustracion.jpeg" alt="image proyecto" />
             </div>
 
             <div className="perfil-content">
 
                 <h3 className="perfil-title">{informacion.nombreCompleto}</h3>
                 <p className="perfil-description">
-                    {informacion.ocupacion}
+                    Developer
                 </p>
                 
                 <div className='redes'>
                     {redes.map((red) => (
                         
-                        <a key={red.id} href={red.url} target="_blank" rel="noreferrer">
+                        <a key={red.id} href={red.url} target="_blank" rel="noreferrer" className='red-item'>
                             <i className={red.icon} style={{ backgroundColor: red.color, padding: '4px 6px', borderRadius: '13px'}}></i>
                         </a>
                     ))}
@@ -68,7 +68,6 @@ export const Inicio = ( ) => {
             <h4>Hola, soy {informacion.nombreCompleto}</h4>
             <div className='sb-content'>
                 <p> 
-                    {/* tengo {informacion.edad} años &nbsp; */}
                     {informacion.descripcion_corta}
                 </p>
             </div>

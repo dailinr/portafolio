@@ -5,11 +5,10 @@ import { SobreMi } from '../components/SobreMi';
 import { Proyectos } from '../components/Proyectos';
 import { Contacto } from '../components/Contacto';
 import Aside from '../components/Aside';
-import { useThemeContext } from '../context/ThemeContext';
 
 export const MisRutas = () => {
 
-  const {contextTheme} = useThemeContext();
+  // const {contextTheme} = useThemeContext();
 
   return (
     <>

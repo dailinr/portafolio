@@ -4,7 +4,7 @@ export const ThemeContext = createContext()
     
     // provedor de contexto que proveera a los componentes hijos
 export const ThemeContextProvider = ({ children }) => {
-    const [contextTheme, setContextTheme] = useState('light');
+    const [contextTheme, setContextTheme] = useState('dark');
     const values = {
         contextTheme,
         setContextTheme

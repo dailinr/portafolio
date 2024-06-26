@@ -91,10 +91,10 @@
     transform: scale(1.08);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
     .cont-proy{
-      padding: 0 10%;  
+      padding: 0 5%;  
     } 
     .card{
         width: 100% 

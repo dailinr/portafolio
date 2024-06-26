@@ -164,7 +164,7 @@
     }
 } 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
     #light .pg-sbmi .datos > *:nth-child(2n)::before{
         background-color: inherit !important;

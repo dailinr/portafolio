@@ -84,7 +84,7 @@ input[type="text"], input[type="email"], textarea{
 
 
 
-@media (max-width: 600px){
+@media (max-width: 800px){
 
     .contacto{
         max-width: 100%;

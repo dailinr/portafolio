@@ -14,35 +14,35 @@ export const Contacto = () => {
   // // Estado para manejar el mensaje de respuesta
   // const [message, setMessage] = useState('');
   
-  // // para que se ejecute cada vez que se carge el componente
-  // useEffect(() => {
+  // para que se ejecute cada vez que se carge el componente
+  useEffect(() => {
 
-  //   // Selecciona todos los inputs de tipo texto y todos los textareas
-  //   const inputs = document.querySelectorAll('input[type="text"], textarea');
+    // Selecciona todos los inputs de tipo texto y todos los textareas
+    const inputs = document.querySelectorAll('input[type="text"], textarea');
 
-  //   // Selecciona el elemento .contacto
-  //   const contacto = document.querySelector('.contacto');
+    // Selecciona el elemento .contacto
+    const contacto = document.querySelector('.contacto');
 
-  //   // Función para cambiar el fondo de .contacto
-  //   function cambiarFondo() {
-  //       // if(contextTheme === "light")
-  //       contacto.style.setProperty('box-shadow', '#fad02e 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px', 'important');
+    // Función para cambiar el fondo de .contacto
+    function cambiarFondo() {
+        // if(contextTheme === "light")
+        contacto.style.setProperty('box-shadow', '#fad02e 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px', 'important');
         
       
-  //   }
+    }
 
-  //   // Función para revertir el fondo de .contacto
-  //   function revertirFondo() {
-  //     contacto.style.boxShadow = ''; // Asume el boxShadow original o puedes especificar uno
-  //   }
+    // Función para revertir el fondo de .contacto
+    function revertirFondo() {
+      contacto.style.boxShadow = ''; // Asume el boxShadow original o puedes especificar uno
+    }
 
-  //   // Asigna los eventos focus y blur a cada input y textarea
-  //   inputs.forEach(input => {
-  //     input.addEventListener('focus', cambiarFondo);
-  //     input.addEventListener('blur', revertirFondo);
-  //   });
+    // Asigna los eventos focus y blur a cada input y textarea
+    inputs.forEach(input => {
+      input.addEventListener('focus', cambiarFondo);
+      input.addEventListener('blur', revertirFondo);
+    });
 
-  // },[]);
+  },[]);
 
   // // ----------------------------------------------------------------------------------
 
@@ -61,32 +61,32 @@ export const Contacto = () => {
   //   });
   // };
   
-  // Maneja el envío del formulario
-  const handleSubmit = async (e) => {
-    e.preventDefault(); // Previene el comportamiento por defecto del formulario (recargar la página)
+  // // Maneja el envío del formulario
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault(); // Previene el comportamiento por defecto del formulario (recargar la página)
 
-    try {
-      // Envía una solicitud POST al servidor con los datos del formulario en formato JSON
-      const response = await fetch('http://localhost:8080/sendEmail.php', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData) // guarda el JSON como una cadena de texto 
-      });
+  //   try {
+  //     // Envía una solicitud POST al servidor con los datos del formulario en formato JSON
+  //     const response = await fetch('http://localhost:8080/sendEmail.php', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json'
+  //       },
+  //       body: JSON.stringify(formData) // guarda el JSON como una cadena de texto 
+  //     });
 
-      // Verifica la respuesta del servidor y muestra un mensaje correspondiente
-      if (response.ok) {
-        setMessage('Correo enviado con éxito');
-      }
-      else {
-        const errorData = await response.json();
-        setMessage(errorData.message || 'Error al enviar el correo');
-      }
-    } catch (error) {
-      setMessage('Error al enviar el correo');
-    }
-  };
+  //     // Verifica la respuesta del servidor y muestra un mensaje correspondiente
+  //     if (response.ok) {
+  //       setMessage('Correo enviado con éxito');
+  //     }
+  //     else {
+  //       const errorData = await response.json();
+  //       setMessage(errorData.message || 'Error al enviar el correo');
+  //     }
+  //   } catch (error) {
+  //     setMessage('Error al enviar el correo');
+  //   }
+  // };
 
 
   return (

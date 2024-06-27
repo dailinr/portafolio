@@ -37,7 +37,6 @@ body {
   /* border-radius: 20px; */
   backdrop-filter: blur(10px);
   overflow-y: auto;
-  /* overflow-x: auto; */
 }
 .page{
   padding: 30px 50px ;
@@ -63,20 +62,22 @@ body {
   .contenido{
     grid-area: contenido;
     width: 100%; 
+    height: calc(100vh - 53px);
   }
   .page{
     width: 100%;
     padding: 30px 30px ;
-    min-height: 100vh;
   }
   
   .aside {
     grid-area: nav;
-    /* position: fixed; */
     width: 100%;
     height: auto;
     display: flex;
-    align-items: center;  
+    align-items: center; 
+    position: fixed;
+    bottom: 0; 
+    z-index: 10;
   }
   
   .aside .nav {

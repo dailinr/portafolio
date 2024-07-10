@@ -1,0 +1,172 @@
+
+
+#dark {
+    background-color: #141414;
+    color: white;
+}
+
+#light .idk,
+#light .card, #light .card-content,
+#light .contacto,  #light .skills div{
+    background-color: #FEFFFF ;
+    color: black !important;
+    box-shadow: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px !important;
+
+}
+ #light .perfil{
+    background-color: #FEFFFF  !important;
+    box-shadow: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+} 
+/* SOBRE MI - NARANJA */
+#light .sobreMi{
+    /* background-color: #f5d4c6 !important; */
+    background-color: #c9e2e2 !important;
+    box-shadow: none;
+    color: #095252  !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+/* BARRA LATERAL */
+#light .aside, #light{
+    background-color: #FEFFFF !important;
+    /* background-color: #E4F6F8; */
+
+
+}
+
+/* FONDO DE LA PAGINA */
+#light .contenido,  #light .page{
+    background-color: #dde2ee !important;
+}
+#light .nav-link, #light .nav-link .bi{
+    color: black !important;
+    font-weight: 500;
+}
+
+#light .aside .active,
+#light .nav-item:hover .nav-link{
+    background-color: #e2e5ec  !important;
+}
+
+#light p{
+    color: black;
+}
+.cardP-description{
+    color: white !important;
+}
+#light .page h3, #light .pg-sbmi strong, #light .pg-sbmi h4{
+    color: #095252 !important
+}
+#light h1, #light h2, #light h3, #light h5, #light .cont-proy .card-title,
+ #light .contacto .contacto-title{
+    color: #095252!important
+}
+/* #light .contacto:focus{
+    box-shadow: #095252  0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px !important;
+} */
+#light .contacto  input[type="text"],
+#light .contacto  input[type="email"],
+#light .contacto textarea{
+    border-bottom: 1px solid #095252 !important ;
+}
+
+#light input[type="submit"], #light .card-button  {
+    background: #095252 !important;
+    color: white !important;
+}
+/* s--------- */
+#light .cont-proy .links-p .btn-p{
+    border: 1px solid #095252 !important;
+}
+#light .cont-proy .links-p i{
+    color: #095252;
+    font-weight: 600;
+}
+
+#light input[type="submit"]:hover, #light .card-button:hover {
+    background: #127777 !important
+}
+#light .skills h6 , #light .perfil-title{
+    color: #095252  !important;
+    font-weight: 700 !important;
+}
+#light .icon-terminal .bi{
+    fill: #095252  !important
+}
+#light .cv-button{
+    background-color:  #095252  ;
+    color: white;
+    border: none
+    
+}
+#light .cv-button:hover{
+    background: #107777 ;
+}
+#light .proyecto{
+    
+    box-shadow: none;
+}
+#light .proyecto .cardP-title, #light .proyecto .links .bi, #light .proyecto .links .bx{
+    color: #ff920c;
+    font-weight: 700;
+}
+#light .proyecto .links .btn {
+    border: 1px solid #c7730c;
+} 
+#light .proyecto .links .btn:hover{
+    background: #c7730c ;
+}
+#light .proyecto .links .btn:hover .bi, #light .proyecto .links .btn:hover .bx{
+    color: white
+}
+#light .cont-proy .card{
+    border: none
+}
+#light .aside .imagen img{
+    display: none;
+}
+#light .aside .imagen{
+    background: url('../public/css-24__1_-removebg-preview.png') ;
+    background-size: cover !important;
+    background-position: center !important;
+}
+#light .pg-sbmi{
+    background-color: #FEFFFF !important;
+    /* border-radius: 16px; */
+    margin: 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px !important;
+}
+
+#light .pg-sbmi .datos > *:nth-child(2n)::before{
+    background-color: #095252 !important;
+}
+#light .pg-sbmi .ab-image, #light .inicio .img-sb{
+    background: url('../public/Learn_Programming_light.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+#dark .pg-sbmi .ab-image, #dark .inicio .img-sb{
+    background: url('../public/Learn Programming.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+
+#light .bxl-github{
+    color: black !important
+}
+
+@media (max-width: 800px) {
+
+    #light .aside, #dark .aside{
+        padding: 5px 0 !important;
+    }
+} 
+
+@media (max-width: 800px) {
+
+    #light .pg-sbmi .datos > *:nth-child(2n)::before{
+        background-color: inherit !important;
+    }
+} 

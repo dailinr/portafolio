@@ -1,0 +1,113 @@
+.ab-image{
+    width: 270px;
+    height: 270px;
+    float: right;
+    shape-outside: circle(60%);
+    -webkit-shape-outside: circle(60%);
+    margin-right: 20px;  /* Ajusta según sea necesario */
+    
+}
+.ab-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.biografia{
+    overflow: hidden;
+}
+
+.datos{
+    margin-top: 10px;
+    /* border-right: 1px solid #fad02e; */
+    overflow: hidden;
+    padding: 10px 20px;
+    min-width: 500px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto ;
+    row-gap: 0px;
+    column-gap: 0px;
+}
+/* Aplica el pseudo-elemento a todos los elementos de la segunda columna */
+.datos > *:nth-child(2n ) {
+    position: relative;
+    padding-left: 20px;
+}
+.datos > *:nth-child(2n )::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px; /* Ancho de la línea vertical */
+    background-color: #fad02e; /* Color de la línea */
+    transform: translateX(-100%); /* Ajusta la línea al borde izquierdo */
+}
+/* Ajusta el inicio de la línea si es necesario para evitar solapamientos o para alinear con el contenido */
+.datos > *:nth-child(2n )::before {
+    top: -10px; /* Ajusta según el margen superior deseado */
+    bottom: -10px; /* Ajusta según el margen inferior deseado */
+}
+
+
+.datos strong, .skills-sb h4{
+    color: #fad02e
+}
+.datos strong{
+    font-weight: 500;
+}
+.skills-sb h4{
+    margin-bottom: 10px;
+}
+.skills-sb{
+    margin-top: 10px;
+    display: flex; 
+    gap: 50px
+}
+.skills-sb .bx{
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+@media (max-width: 800px) {
+    .cont-sobremi{
+        display: flex;
+        flex-direction: column;
+    }
+    .ab-image{
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        
+    }
+    .biografia{
+        margin-top: 30px;
+        min-height: 400px;
+    }
+    .datos{
+        width: 100%;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        min-height: 350px;
+        margin-top: 0px;
+    }
+    .skills-sb{
+        flex-direction: column;
+        row-gap: 30px;
+        margin-top: 15px;
+    }
+    .skills-sb .bx{
+        font-size: 30px;
+        margin-right: 5px;
+    }
+    .datos > *:nth-child(2n ) {
+        position: relative;
+        padding-left: 0px;
+    }
+    .datos > *:nth-child(2n )::before {
+        background-color: inherit;
+    }
+}

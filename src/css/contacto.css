@@ -1,0 +1,97 @@
+.page-contacto{
+    margin: 0 ;
+    display: flex;
+    align-items: center;
+}
+.contacto{
+  max-width: 50%;
+  margin: 0 auto;
+  background-color:#262727;
+  border-radius: 20px;
+  border-bottom-right-radius: 0px !important;
+  border-top-left-radius: 0px;
+  padding: 30px 30px;
+  min-height: 450px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transition: transform 500ms ;
+
+}
+.contacto:hover{
+    transform: scale(1.05);
+}
+
+.form-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-container .item-form{
+    position: relative;
+    width: 100%;
+}
+
+
+input[type="text"], input[type="email"], textarea{
+    border: 0; 
+    
+    outline: 0;
+    font-size: 1rem;
+    /* background: #141414; */
+    background-color: transparent;
+    color: white;
+    margin-top: 20px;
+    /* width: 300px; */
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #fad02e;
+} 
+.textarea{
+    height: 10em;
+    resize: none;
+    margin-top: 20px !important;
+}
+
+.btn-enviar{
+    padding: 5px;
+    border-radius: 5px;
+    color: black !important;
+    font-weight: 400;
+    background-color: #fad02e;
+    width: 100px;
+    border: 0px;
+    margin-top: 20px;
+    transition: all 300ms;
+    position: absolute;
+    right: 0;
+}
+.btn-enviar:hover{
+    background-color: #c5a009;
+    font-weight: 500;
+    
+}
+
+@media (max-width: 1100px){
+
+    .contacto{
+        max-width: 80%;
+        padding: 30px 20px;
+    }
+
+    input[type="text"], input[type="email"], textarea{
+        width: 100%
+    }
+}
+
+
+
+@media (max-width: 800px){
+
+    .contacto{
+        max-width: 100%;
+        padding: 30px 20px;
+    }
+
+    input[type="text"], input[type="email"], textarea{
+        width: 100%
+    }
+}
+

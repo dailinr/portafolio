@@ -70,6 +70,11 @@
     margin-right: 5px;
 }
 
+.skills-sb img{
+    
+    margin: 0 0 10px 3px;
+}
+
 @media (max-width: 800px) {
     .cont-sobremi{
         display: flex;

@@ -182,9 +182,15 @@
  
 
 .sb-content{
+    height: auto;
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* Limita a dos líneas */
+    line-clamp: 4; 
     overflow: hidden;
-    height: 100px;
-    font-size: medium;
+    text-overflow: ellipsis; /* pone tres puntos al final */
+
 }
 
 
@@ -202,6 +208,12 @@
     margin-top: 10px;
     font-size: xx-large;
 }
+
+.skills-inicio img{
+    
+    margin: 0 0 20px 2px;
+}
+
 .skills-inicio h6{
     color: #FAD02E;
 }

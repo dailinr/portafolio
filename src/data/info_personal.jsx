@@ -6,7 +6,7 @@ export const informacion = {
     ocupacion: 'Estudiante de ing sistemas',
     correo: 'dailinromero@gmail.com',
     descripcion_corta: "Soy estudiante de ingeniería en sistemas, actualmente estoy en mis últimos semestres. Mi enfoque va hacia el diseño y desarrollo de páginas web. Mi formación me ha brindado las habilidades necesarias para poder desarrollar proyectos funcionales.",
-    descripcion_larga: "Tengo un sólido entendimiento en desarrollo web, especialmente en frontend con diseños adaptables e intuitivos. Domino muy bien la definición de requisitos, el diseño y normalización de bases de datos relacionales. Poseo habilidades en modelado de diagramas UML y aplicación de métricas en diseño y código. ",
+    descripcion_larga: "Tengo un sólido entendimiento en desarrollo web, especialmente en frontend con diseños adaptables e intuitivos. También domino la definición de requisitos, el diseño y normalización de bases de datos SQL y no SQ, modelado de diagramas UML y aplicación de métricas en diseño y código, y estructuras de datos en Java.",
     ciudad: 'Santa Marta',
     formacion: 'Universidad del Magdalena',
     

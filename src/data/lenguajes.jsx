@@ -34,5 +34,55 @@ export const lenguajes = [
       nombre: "java",
       color: '#007396',
       icon: 'bx bxl-java'
+    },
+    {
+      id: 7,
+      nombre: "tailwind",
+      color: '#06B6D4',
+      icon: 'bx bxl-tailwind-css'
+    },
+    {
+      id: 8,
+      nombre: "javascript",
+      color: '#F7DF1E',
+      icon: 'bx bxl-javascript'
+    },
+    {
+      id: 9,
+      nombre: "sass",
+      color: '#CC6699',
+      icon: 'bx bxl-sass'
+    },
+    {
+      id: 10,
+      nombre: "node",
+      color: '#339933',
+      icon: 'bx bxl-nodejs'
+    },
+    {
+      id: 11,
+      nombre: "express",
+      color: '#000000',
+      icon: 'bx bxl-express' // jkdsh
+    },
+    {
+      id: 12,
+      nombre: "mongodb",
+      color: '#47A248',
+      icon: 'bx bxl-mongodb'
+    },
+    {
+      id: 13,
+      nombre: "postgresql",
+      color: '#336791',
+      icon: 'bx bxl-postgresql'
+    },
+    {
+      id: 14,
+      nombre: "spring-boot",
+      color: '#6DB33F',
+      icon: 'bx bxl-spring-boot'
     }
+
+
 ];

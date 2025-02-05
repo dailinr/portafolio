@@ -22,9 +22,9 @@ function App() {
     <div className="app" id={contextTheme}  >
 
       
-      <div class="modeIcon" style={{ display: 'flex', alignItems: 'center', position: 'absolute', top: '10px', right: '45px', zIndex: 1 }}>
+      <div className="modeIcon" style={{ display: 'flex', alignItems: 'center', position: 'absolute', top: '10px', right: '45px', zIndex: 1 }}>
 
-        <i class='bx bxs-brightness-half'
+        <i className='bx bxs-brightness-half'
           style={{color: `${ contextTheme === "light" ?  iconDark  :  iconLight }` }}
         /> &nbsp;
 

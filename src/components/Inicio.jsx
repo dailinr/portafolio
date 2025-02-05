@@ -10,7 +10,7 @@ import { redes } from '../data/redes'
 export const Inicio = ( ) => {
     
     const handleDownloadCV = () => {
-        const cvPath = '../public/dailinromeroCV.pdf';
+        const cvPath = '../public/Dailin-Romero-FlowCV-Resume-20250201 (1)';
 
         window.open( cvPath, '_blank'); // Abrir el PDF en una nueva pestaña del navegador
       

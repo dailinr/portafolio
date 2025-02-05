@@ -3,25 +3,25 @@ export const trabajos = [
    
     {
         id: 1,
-        image: './../public/blog-node.jpg',
+        image: `${import.meta.env.BASE_URL}blog-node.jpg`,
         titulo: 'Blog tecnopulse',
         descripcion: 'Los usuarios pueden registrarse y publicar artículos sobre tecnología y programación.',
         lenguajes: ['tailwind', 'react', 'node', 'mongodb'],
-        link: 'https://blogweblive.000webhostapp.com',
+        link: '',
         github: 'https://github.com/dailinr/blog-node'
     },
     {
         id: 2,
-        image: './../public/gestion_gastos.jpg',
+        image: `${import.meta.env.BASE_URL}gestion_gastos.jpg`,
         titulo: 'Gestion de gastos',
         descripcion: 'Permite llevar un control de gastos e ingresos. Ofrece herramientas para la visualización de datos.',
         lenguajes: ['tailwind', 'react', 'node', 'mongodb'],
-        link: 'https://blogweblive.000webhostapp.com',
+        link: '',
         github: 'https://github.com/dailinr/gestion-gastos'
     },
     {
         id: 3,
-        image: './../public/monitorias.jpg',
+        image: `${import.meta.env.BASE_URL}monitorias.jpg`,
         titulo: 'Easy-tutos',
         descripcion: 'Plataforma para monitorias academicas en la universidad del magdalena',
         lenguajes: ['html', 'css', 'react', 'php'],
@@ -30,7 +30,7 @@ export const trabajos = [
     },
     {
         id: 4,
-        image: './../public/psiconotes.jpg',
+        image: `${import.meta.env.BASE_URL}psiconotes.jpg`,
         titulo: 'Psiconote',
         descripcion: 'Plataforma web para el registro de citas psicologicas.',
         lenguajes: ['css', 'react', "spring-boot"],
@@ -39,7 +39,7 @@ export const trabajos = [
     },
     {
         id: 5,
-        image: './../public/aero-proy.jpg',
+        image: `${import.meta.env.BASE_URL}aero-proy.jpg`,
         titulo: 'Rutas aeropuerto',
         descripcion: 'Proyecto que ayuda a escoger mejor ruta al usuario.',
         lenguajes: ['java'],

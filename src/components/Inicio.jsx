@@ -129,10 +129,10 @@ export const Inicio = ( ) => {
             <div>
                 <h6>Back-end</h6>
                 <i className='bx bxl-nodejs' style={{color: '#339933'}}></i>
-                <img src="../public/icons8-expresar-js-50.png" alt="expressjs" width="22px" height="22px" />
+                <img src={`${import.meta.env.BASE_URL}icons8-expresar-js-50.png`} alt="expressjs" width="22px" height="22px" />
                 <i className='bx bxl-mongodb' style={{color: '#47A248'}}></i>
-                <img src="../public/icons8-postgresql-48.png" alt="postgresql" width="30px" height="30px" />
-                <img src="../public/icons8-logotipo-de-java-coffee-cup-48.png" alt="java" width="32px" height="32px" />
+                <img src={`${import.meta.env.BASE_URL}icons8-postgresql-48.png`} alt="postgresql" width="30px" height="30px" />
+                <img src={`${import.meta.env.BASE_URL}icons8-logotipo-de-java-coffee-cup-48.png`} alt="java" width="32px" height="32px" />
                 {/* <i className='bx bxl-php' style={{color: '#777BB4'}}></i> */}
                 {/* <i className='bx bxl-c-plus-plus'  style={{color: '#00599C'}}></i> */}
             </div>
@@ -141,8 +141,8 @@ export const Inicio = ( ) => {
                 <h6>Otros</h6>
                 <i className='bx bxl-git' style={{color: '#F05032'}}></i>
                 <i className='bx bxl-github' style={{color: '#FFFF'}}></i>
-                <img src="../public/icons8-figura-48.png" alt="figma" width="30px" height="30px" />
-                <img src="../public/postman-icon.png" alt="postman" width="28px" height="28px" />
+                <img src={`${import.meta.env.BASE_URL}icons8-figura-48.png`} alt="figma" width="30px" height="30px" />
+                <img src={`${import.meta.env.BASE_URL}postman-icon.png`} alt="postman" width="28px" height="28px" />
             </div>
         </div>
     </div>

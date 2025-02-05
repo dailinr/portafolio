@@ -78,7 +78,7 @@ export const Aside = () => {
         {!isNarrowScreen ? (
         <div className='imagen'>
             
-            <img src="../public/css-24-removebg-preview (1).png" alt="" />
+            <img src={`${import.meta.env.BASE_URL}css-24-removebg-preview (1).png`} alt="" />
         </div>) : null }
         
     </div>

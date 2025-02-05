@@ -1,6 +1,5 @@
 import React from 'react'
-// import { Routes, Route, Navigate } from "react-router-dom";
-import { HashRouter as Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { Inicio } from '../components/Inicio';
 import { SobreMi } from '../components/SobreMi';
 import { Proyectos } from '../components/Proyectos';

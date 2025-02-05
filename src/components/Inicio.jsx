@@ -10,7 +10,7 @@ import { redes } from '../data/redes'
 export const Inicio = ( ) => {
     
     const handleDownloadCV = () => {
-        const cvPath = '../public/dailinromeroCV.pdf';
+        const cvPath = `${import.meta.env.BASE_URL}CV-dailin-romero.pdf`;
 
         window.open( cvPath, '_blank'); // Abrir el PDF en una nueva pestaña del navegador
       

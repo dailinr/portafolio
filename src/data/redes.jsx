@@ -15,10 +15,8 @@ export const redes = [
     },
     {
         id: 3,
-        nombre: 'instagram',
-        url: 'https://www.instagram.com/_dailinr',
-        icon: 'bi bi-instagram',
-        color: '#E1306C'
+        nombre: 'workana',
+        url: 'https://www.workana.com/es/talent/profile'
     },
     {
         id: 4,

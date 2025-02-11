@@ -7,7 +7,7 @@ export const trabajos = [
         titulo: 'Blog tecnopulse',
         descripcion: 'Los usuarios pueden registrarse y publicar artículos sobre tecnología y programación.',
         lenguajes: ['tailwind', 'react', 'node', 'mongodb'],
-        link: '',
+        link: 'https://tecnopulse.lat/',
         github: 'https://github.com/dailinr/blog-node'
     },
     {
@@ -16,7 +16,7 @@ export const trabajos = [
         titulo: 'Gestion de gastos',
         descripcion: 'Permite llevar un control de gastos e ingresos. Ofrece herramientas para la visualización de datos.',
         lenguajes: ['tailwind', 'react', 'node', 'mongodb'],
-        link: '',
+        link: 'https://gestion-gastos-vert.vercel.app/',
         github: 'https://github.com/dailinr/gestion-gastos'
     },
     {

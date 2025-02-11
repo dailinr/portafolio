@@ -10,7 +10,7 @@ import { redes } from '../data/redes'
 export const Inicio = ( ) => {
     
     const handleDownloadCV = () => {
-        const cvPath = `${import.meta.env.BASE_URL}CV-dailin-romero.pdf`;
+        const cvPath = `${import.meta.env.BASE_URL}dailinromeroCV.pdf`;
 
         window.open( cvPath, '_blank'); // Abrir el PDF en una nueva pestaña del navegador
       
@@ -42,9 +42,18 @@ export const Inicio = ( ) => {
                 <div className='redes'>
                     {redes.map((red) => (
                         
-                        <a key={red.id} href={red.url} target="_blank" rel="noreferrer" className='red-item'>
-                            <i className={red.icon} style={{ backgroundColor: red.color, padding: '4px 6px', borderRadius: '13px'}}></i>
-                        </a>
+                        (red.nombre == "workana" ? 
+                            <a key={red.id} href={red.url} target="_blank" rel="noreferrer" className='red-item'>
+                                <img src={`${import.meta.env.BASE_URL}workana.png`} 
+                                    width="29" height="28" alt="workana"
+                                    style={{ backgroundColor: 'white', padding: '4px 6px', borderRadius: '13px'}} 
+                                />
+                            </a> 
+                        :
+                            <a key={red.id} href={red.url} target="_blank" rel="noreferrer" className='red-item'>
+                                <i className={red.icon} style={{ fontSize: '16px', backgroundColor: red.color, padding: '4px 6px', borderRadius: '13px'}}></i>
+                            </a> 
+                        )
                     ))}
                 </div>
                 

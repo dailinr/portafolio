@@ -46,6 +46,15 @@ export const trabajos = [
         link: '',
         github: 'https://github.com/dailinr/Rutas-aeropuerto'
     },
+   {
+        id: 6,
+        image: `${import.meta.env.BASE_URL}canal1.jpg`,
+        titulo: 'BD canal 1',
+        descripcion: 'Base de datos inspirada en la pagina del canal 1',
+        lenguajes: ['postgresql'],
+        link: '',
+        github: 'https://github.com/dailinr/BD-canal-uno'
+    },
     
       
 ];

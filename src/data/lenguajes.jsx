@@ -13,9 +13,10 @@ export const lenguajes = [
     },
     {
       id: 3,
-      nombre: "react",
-      color: '#61DAFB',
-      icon: 'bx bxl-react'
+      nombre: "tailwind",
+      color: '#06B6D4',
+      icon: 'bx bxl-tailwind-css',
+      frontend: true,
     },
     {
       id: 4,
@@ -37,15 +38,17 @@ export const lenguajes = [
     },
     {
       id: 7,
-      nombre: "tailwind",
-      color: '#06B6D4',
-      icon: 'bx bxl-tailwind-css'
+      nombre: "react",
+      color: '#61DAFB',
+      icon: 'bx bxl-react',
+      frontend: true
     },
     {
       id: 8,
       nombre: "javascript",
       color: '#F7DF1E',
-      icon: 'bx bxl-javascript'
+      icon: 'bx bxl-javascript',
+      frontend: true
     },
     {
       id: 9,
@@ -57,32 +60,44 @@ export const lenguajes = [
       id: 10,
       nombre: "node",
       color: '#339933',
-      icon: 'bx bxl-nodejs'
+      icon: 'bx bxl-nodejs',
+      backend: true
     },
     {
       id: 11,
       nombre: "express",
       color: '#000000',
-      icon: 'bx bxl-express' // jkdsh
+      icon: 'bx bxl-express',
+      backend: true
     },
     {
       id: 12,
       nombre: "mongodb",
       color: '#47A248',
-      icon: 'bx bxl-mongodb'
+      icon: 'bx bxl-mongodb',
+      backend: true
     },
     {
       id: 13,
       nombre: "postgresql",
       color: '#336791',
-      icon: 'bx bxl-postgresql'
+      icon: 'bx bxl-postgresql',
+      backend: true
     },
     {
       id: 14,
       nombre: "spring-boot",
       color: '#6DB33F',
-      icon: 'bx bxl-spring-boot'
-    }
+      icon: 'bx bxl-spring-boot',
+      backend: true
+    },
+    {
+      id: 15,
+      nombre: "typescript",
+      color: '#007ACC',
+      icon: 'bx bxl-typescript',
+      frontend: true
+    },
 
 
 ];

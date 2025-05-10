@@ -1,12 +1,11 @@
 import React from 'react'
 import './../css/sobremi.css';
 import { informacion } from '../data/info_personal'
+import { lenguajes } from '../data/lenguajes';
 
 export const SobreMi = () => {
   return (
     <div className='page pg-sbmi'>
-
-      {/* <h3>Sobre Mi<hr/> </h3> */}
 
       <section className='cont-sobremi'>
 
@@ -24,7 +23,7 @@ export const SobreMi = () => {
 
         <div className='datos ' >
 
-          <p><strong>Edad </strong> <br/>22 años</p>
+          <p><strong>Edad </strong> <br/>{informacion.edad}s</p>
           <p><strong>Ocupación </strong> <br/>{informacion.ocupacion}</p>
           <p><strong>Dirección </strong> <br/>{informacion.ciudad}</p>
           <p><strong>Formación </strong> <br/>{informacion.formacion}</p>
@@ -36,23 +35,26 @@ export const SobreMi = () => {
 
           <div>
             <h4>Front-end</h4>
-            
-            <i className='bx bxl-html5' style={{color: '#E34F26'}}></i>
-            <i className='bx bxl-css3' style={{color: '#1572B6'}}></i>
-            <i className='bx bxl-sass' style={{color: '#CC6699'}}></i>
-            <i className='bx bxl-tailwind-css' style={{color: '#06B6D4'}} ></i>
-            <i className='bx bxl-javascript' style={{color: '#F7DF1E'}}></i>
-            <i className='bx bxl-react' style={{color: '#61DAFB'}}></i>
-              
+
+            {lenguajes.map(lenguaje => (
+              lenguaje.frontend &&
+              <i 
+                key={lenguaje.id} 
+                className={`${lenguaje.icon}`}
+                style={{color: `${lenguaje.color}`}}
+              />
+            ))}
           </div>
 
           <div>
             <h4>Back-end</h4>
+
+            <i className='bx bxl-spring-boot' style={{color: '#6DB33F'}}></i>
+            <img src={`${import.meta.env.BASE_URL}mysql.ico`} alt="mysql"  style={{ marginRight: "5px", width: "22px", height: "22px"}} />
             <i className='bx bxl-nodejs' style={{color: '#339933'}}></i>
             <img src={`${import.meta.env.BASE_URL}icons8-expresar-js-50.png`} alt="expressjs" width="18px" height="18px" />
             <i className='bx bxl-mongodb' style={{color: '#47A248', marginRight: 0}}></i>
             <img src={`${import.meta.env.BASE_URL}icons8-postgresql-48.png`} alt="postgresql" width="24px" height="24px" />
-            <img src={`${import.meta.env.BASE_URL}icons8-logotipo-de-java-coffee-cup-48.png`} alt="java" width="26px" height="26px" />
           </div>
 
           <div >

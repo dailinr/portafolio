@@ -5,24 +5,8 @@ export const informacion = {
     fechaNacimiento: new Date(2002, 3, 27), 
     ocupacion: 'Estudiante de ing sistemas',
     correo: 'dailinromero@gmail.com',
-    descripcion_corta: "Soy estudiante de ingeniería en sistemas, actualmente estoy en mis últimos semestres. Mi enfoque va hacia el diseño y desarrollo de páginas web. Mi formación me ha brindado las habilidades necesarias para poder desarrollar proyectos funcionales.",
-    descripcion_larga: "Tengo un sólido entendimiento en desarrollo web, especialmente en frontend con diseños adaptables e intuitivos. También domino la definición de requisitos, el diseño y normalización de bases de datos SQL y noSQL, modelado de diagramas UML y aplicación de métricas en diseño y código, y estructuras de datos en Java.",
+    descripcion_corta: "Desarrollador web full-stack versátil, capaz de construir soluciones completas desde la interfaz de usuario hasta la lógica del servidor y la gestión de datos.",
+    descripcion_larga: "Desarrollador web full-stack versátil, capaz de construir soluciones completas desde la interfaz de usuario hasta la lógica del servidor y la gestión de datos. Mi conjunto de habilidades abarca el desarrollo frontend con TypeScript y el ecosistema de React (incluyendo Zustand), así como el backend utilizando Spring Boot y su ecosistema (Spring Security, Spring Data, Spring Web, etc.) o Node.js con Express.js. Tengo experiencia con bases de datos SQL y noSQL. Aplico patrones de diseño API REST y la arquitectura MVC para asegurar el desarrollo de aplicaciones eficientes y escalables.",
     ciudad: 'Santa Marta',
     formacion: 'Universidad del Magdalena',
-    
-    habilidades: [
-        'Desarrollo web',
-    ],
-    
-
-    get edad() {
-        const hoy = new Date();
-        const nacimiento = this.fechaNacimiento;
-        let edad = hoy.getFullYear() - nacimiento.getFullYear();
-        const m = hoy.getMonth() - nacimiento.getMonth();
-        if (m < 0 || (m === 0 && hoy.getDate() < nacimiento.getDate())) {
-            edad--;
-        }
-        return edad;
-    }
 }

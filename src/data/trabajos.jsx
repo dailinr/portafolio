@@ -16,7 +16,7 @@ export const trabajos = [
         titulo: 'Gestion de gastos',
         descripcion: 'Permite llevar un control de gastos e ingresos. Ofrece herramientas para la visualización de datos.',
         lenguajes: ['tailwind', 'react', 'node', 'mongodb'],
-        link: 'https://gestion-gastos-vert.vercel.app/',
+        link: 'https://gestion-gastos-alpha.vercel.app/',
         github: 'https://github.com/dailinr/gestion-gastos'
     },
     {
